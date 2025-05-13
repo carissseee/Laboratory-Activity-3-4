@@ -183,7 +183,7 @@ monitor = Monitor(
     144)
 
 ```
-The Monitor class is a subclass of the abstract base class ComputerDevice. It includes inherited attributes from the base class like brand, material, color, and price using super() method. It also introduces specific properties for a monitor such as size, resolution, and refresh_rate. Its methods show monitor functionalities such as display() for displaying content, adjust_brightness(), and set_resolution(), along with the power control methods on() and off() that came from the base class by using @abstractmethod. This class is used to simulate a monitor in a simple computer system.
+The `Monitor` class is a subclass of the abstract base class `ComputerDevice`. It includes inherited attributes from the base class like `brand`, `material`, `color`, and `price` using `super()` method. It also introduces specific properties for a monitor such as `size`, `resolution`, and `refresh_rate`. Its methods show monitor functionalities such as `display()` for displaying content, `adjust_brightness()`, and `set_resolution()`, along with the power control methods `on()` and `off()` that came from the base class by using `@abstractmethod`. This class is used to simulate a monitor in a simple computer system.
 
 ### ```Speaker```
 ```python
