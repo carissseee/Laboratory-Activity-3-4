@@ -36,6 +36,99 @@ class ComputerDevice(ABC):
 
 
 ```
+### ```Mouse```
+
+```python
+class Mouse(ComputerDevice):
+    def __init__(self, brand, material, color, price, connectivity, dpi, sensor):
+        super().__init__(brand, material, color, price)
+        self.connectivity = connectivity
+        self.dpi = dpi
+        self.sensor = sensor
+
+
+    def __str__(self):
+        return (
+            f"Brand: {self.brand}\n"
+            f"Material: {self.material}\n"
+            f"Color: {self.color}\n"
+            f"Price: PHP {self.price}\n"
+            f"Connectivity: {self.connectivity}\n"
+            f"DPI: {self.dpi}\n"
+            f"Sensor: {self.sensor}"
+        )
+
+
+    def click(self):
+        return f"{self.brand} mouse clicked."
+    def scroll(self):
+        return f"{self.brand} mouse scrolling."
+    def move_cursor(self, direction):
+        return f"{self.brand} mouse moving cursor {direction}."
+    def on(self):
+        return f"Turning on {self.brand} mouse"
+    def off(self):
+        return f"Turning off {self.brand} mouse"
+
+
+mouse = Mouse(
+    "Logitech",
+    "Plastic",
+    "Black",
+    1200,
+    "Wireless",
+    16000,
+    "Optical")
+```
+
+### ```Keyboard```
+```python
+class Keyboard(ComputerDevice):
+    def __init__(self, brand, material, color, price, layout, number_of_keys, key_type):
+        super().__init__(brand, material, color, price)
+        self.layout = layout
+        self.number_of_keys = number_of_keys
+        self.key_type = key_type
+
+
+    def __str__(self):
+        return (
+            f"Brand: {self.brand}\n"
+            f"Material: {self.material}\n"
+            f"Color: {self.color}\n"
+            f"Price: PHP {self.price}\n"
+            f"Layout: {self.layout}\n"
+            f"Number of Keys: {self.number_of_keys}\n"
+            f"Key Type: {self.key_type}"
+        )
+
+
+    def type(self):
+        return "Typing on the keyboard..."
+       
+    def press_key(self):
+        return "Key pressed."
+       
+    def release_key(self):
+        return "Key released."
+       
+    def on(self):
+        return f"{self.brand} keyboard is ready to use."
+       
+    def off(self):
+        return f"{self.brand} keyboard is shutting down."
+
+
+keyboard = Keyboard(
+    "Logitech",
+    "Plastic",
+    "Black",
+    3000,
+    "QWERTY",
+    104,
+    "Mechanical")
+```
+
 
 
 ## How to Run The Program
