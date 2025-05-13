@@ -182,14 +182,60 @@ monitor = Monitor(
     "1920x1080",
     144)
 
-
-
-
-
-
-
 ```
 The Monitor class is a subclass of the abstract base class ComputerDevice. It includes inherited attributes from the base class like brand, material, color, and price using super() method. It also introduces specific properties for a monitor such as size, resolution, and refresh_rate. Its methods show monitor functionalities such as display() for displaying content, adjust_brightness(), and set_resolution(), along with the power control methods on() and off() that came from the base class by using @abstractmethod. This class is used to simulate a monitor in a simple computer system.
+
+### ```Speaker```
+```python
+
+class Speaker(ComputerDevice):
+    def __init__(self, brand, material, color, price, dual, frequency, power_output):
+        super().__init__(brand, material, color, price)
+        self.dual = dual
+        self.frequency = frequency
+        self.power_output = power_output
+
+
+    def __str__(self):
+        return (
+            f"Brand: {self.brand}\n"
+            f"Material: {self.material}\n"
+            f"Color: {self.color}\n"
+            f"Price: PHP {self.price}\n"
+            f"Dual: {self.dual}\n"
+            f"Frequency: {self.frequency}\n"
+            f"Power Output: {self.power_output}"
+        )
+
+
+    def play_sound(self):
+        return "Playing sound..."
+       
+    def adjust_volume(self):
+        return "Adjusting volume..."
+       
+    def mute(self):
+        return "Muted."
+       
+    def on(self):
+        return f"{self.brand} speaker is on."
+       
+    def off(self):
+        return f"{self.brand} speaker is off."
+
+
+speaker = Speaker(
+    "Sony",
+    "Plastic",
+    "Purple",
+    "₱8,999.00",
+    "Yes",
+    "20 Hz - 20,000 Hz",
+    "24 Watts")
+
+```
+
+
 
 ## How to Run The Program
 This software is a computer device simulator that uses object-oriented programming (OOP) to illustrate different computer hardware components and how they work. The user can select from six different computer devices on the main menu that appears when the software has finished running: the mouse, keyboard, monitor, speaker, system unit, and camera. If the user wants to stop, they can also choose to terminate the program. The application will instantly show all of the device's details after you select one from the menu. The brand, material, color, price, and other technical characteristics particular to the item are all included in these specifications. The application will also show all of the functioning methods related to that specific device in accordance with the standards. These techniques reflect common tasks that the device can carry out, like clicking, scrolling, taking pictures, recording audio, typing, altering the brightness, or processing data. The output will provide users a sense of how each piece of hardware works by simulating these functionalities in a descriptive way.
