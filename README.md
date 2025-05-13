@@ -82,7 +82,7 @@ mouse = Mouse(
     16000,
     "Optical")
 ```
-The Mouse class, a subclass of ComputerDevice, models the characteristics and behaviors of a computer mouse while demonstrating object-oriented principles such as inheritance, encapsulation, and method overriding. It inherits general attributes like brand, material, color, and price from the parent class, and introduces mouse-specific attributes including connectivity (wired or wireless), dpi (sensitivity), and sensor type (optical or laser). The class includes a __str__() method for generating a user-friendly summary of all attributes. Functional methods simulate mouse interactions: click() for clicking, scroll() for scrolling, and move_cursor(direction) for directional cursor movement. Additionally, the on() and off() methods simulate powering the device on and off, respectively.
+The `Mouse` class, a subclass of `ComputerDevice`, models the characteristics and behaviors of a computer mouse while demonstrating object-oriented principles such as inheritance, encapsulation, and method overriding. It inherits general attributes like `brand`, `material`, `color`, and `price` from the parent class, and introduces mouse-specific attributes including `connectivity` (wired or wireless), `dpi` (sensitivity), and `sensor` type (optical or laser). The class includes a __str__() method for generating a user-friendly summary of all attributes. Functional methods simulate mouse interactions: `click()` for clicking, `scroll()` for scrolling, and `move_cursor(direction)` for directional cursor movement. Additionally, the `on()` and `off()` methods simulate powering the device on and off, respectively.
 
 ### ```Keyboard```
 ```python
