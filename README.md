@@ -82,6 +82,7 @@ mouse = Mouse(
     16000,
     "Optical")
 ```
+The Mouse class is a subclass of ComputerDevice that models the characteristics and behavior of a computer mouse. This class demonstrates object-oriented programming principles such as inheritance, encapsulation, and method overriding.
 
 ### ```Keyboard```
 ```python
