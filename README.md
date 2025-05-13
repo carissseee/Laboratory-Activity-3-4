@@ -286,6 +286,11 @@ system_unit = SystemUnit(
 
 ```
 
+
+```SystemUnit``` is one of the subclass of ```ComputerDevice``` that inherits attributes such as material, color, and price by using ```super() method```. Its unique attributes include clock speed, number of cores, and architecture. This are all set by using the ```def __init__``` method
+while ```def __str__``` method for its display. The ```def on()``` and ```def off()``` method came from the parent class ```ComputerDevice``` by using ```@abstractmethod``` which will have a different implementation for this device. The remaining methods such as ```process_data```, ```execute_instruction```, ```manage_memory``` will return strings and statement about the device.
+
+
 ###  ```WebCam```
 
 ```python
