@@ -82,7 +82,7 @@ mouse = Mouse(
     16000,
     "Optical")
 ```
-The Mouse class is a subclass of ComputerDevice that models the characteristics and behavior of a computer mouse. This class demonstrates object-oriented programming principles such as inheritance, encapsulation, and method overriding.
+The Mouse class, a subclass of ComputerDevice, models the characteristics and behaviors of a computer mouse while demonstrating object-oriented principles such as inheritance, encapsulation, and method overriding. It inherits general attributes like brand, material, color, and price from the parent class, and introduces mouse-specific attributes including connectivity (wired or wireless), dpi (sensitivity), and sensor type (optical or laser). The class includes a __str__() method for generating a user-friendly summary of all attributes. Functional methods simulate mouse interactions: click() for clicking, scroll() for scrolling, and move_cursor(direction) for directional cursor movement. Additionally, the on() and off() methods simulate powering the device on and off, respectively.
 
 ### ```Keyboard```
 ```python
@@ -131,9 +131,7 @@ keyboard = Keyboard(
     104,
     "Mechanical")
 ```
-
-
-
+The Keyboard class is a subclass of the abstract base class ComputerDevice. It includes inherited attributes from the base class like brand, material, color, and price by using super() method. It also has specific properties for a keyboard such as layout, number_of_keys, and key_type. The class methods are type(), press_key(), and release_key() that shows keyboard functionality, as well as power control methods on() and off() that came from base class by using @abstractmethod. This class is used to simulate a keyboard in a simple computer system.
 
 
 ### ```Monitor```
@@ -191,6 +189,7 @@ monitor = Monitor(
 
 
 ```
+he Monitor class is a subclass of the abstract base class ComputerDevice. It includes inherited attributes from the base class like brand, material, color, and price using super() method. It also introduces specific properties for a monitor such as size, resolution, and refresh_rate. Its methods show monitor functionalities such as display() for displaying content, adjust_brightness(), and set_resolution(), along with the power control methods on() and off() that came from the base class by using @abstractmethod. This class is used to simulate a monitor in a simple computer system.
 
 ## How to Run The Program
 This software is a computer device simulator that uses object-oriented programming (OOP) to illustrate different computer hardware components and how they work. The user can select from six different computer devices on the main menu that appears when the software has finished running: the mouse, keyboard, monitor, speaker, system unit, and camera. If the user wants to stop, they can also choose to terminate the program. The application will instantly show all of the device's details after you select one from the menu. The brand, material, color, price, and other technical characteristics particular to the item are all included in these specifications. The application will also show all of the functioning methods related to that specific device in accordance with the standards. These techniques reflect common tasks that the device can carry out, like clicking, scrolling, taking pictures, recording audio, typing, altering the brightness, or processing data. The output will provide users a sense of how each piece of hardware works by simulating these functionalities in a descriptive way.
