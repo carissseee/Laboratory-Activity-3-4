@@ -360,7 +360,7 @@ To display its attributes, it will use ```def __str__(self)``` while for its oth
 
 
 
-# How to Run The Program
+# 📜 How to Run The Program
 This software is a computer device simulator that uses object-oriented programming (OOP) to illustrate different computer hardware components and how they work. The user can select from six different computer devices on the main menu that appears when the software has finished running: the mouse, keyboard, monitor, speaker, system unit, and camera. If the user wants to stop, they can also choose to terminate the program. The application will instantly show all of the device's details after you select one from the menu. The brand, material, color, price, and other technical characteristics particular to the item are all included in these specifications. The application will also show all of the functioning methods related to that specific device in accordance with the standards. These techniques reflect common tasks that the device can carry out, like clicking, scrolling, taking pictures, recording audio, typing, altering the brightness, or processing data. The output will provide users a sense of how each piece of hardware works by simulating these functionalities in a descriptive way.
 
 ![image](https://github.com/user-attachments/assets/ea08d674-92e8-405c-bfa4-2090fc76745c)
