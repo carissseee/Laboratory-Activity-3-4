@@ -235,6 +235,65 @@ speaker = Speaker(
 
 ```
 
+### ```SystemUnit```
+```python
+
+
+class SystemUnit(ComputerDevice):
+    def __init__(self, brand, material, color, price, clock_speed, number_of_cores, architecture):
+        super().__init__(brand, material, color, price)
+        self.clock_speed = clock_speed
+        self.number_of_cores = number_of_cores
+        self.architecture = architecture
+
+
+    def __str__(self):
+        return (
+            f"Brand: {self.brand}\n"
+            f"Material: {self.material}\n"
+            f"Color: {self.color}\n"
+            f"Price: PHP {self.price}\n"
+            f"Clock Speed: {self.clock_speed}\n"
+            f"Cores: {self.number_of_cores}\n"
+            f"Architecture: {self.architecture}"
+        )
+
+
+    def process_data(self):
+        return "Processing data..."
+       
+    def execute_instruction(self):
+        return "Executing instruction..."
+       
+    def manage_memory(self):
+        return "Managing memory..."
+       
+    def on(self):
+        return f"Turning on {self.brand} system unit"
+       
+    def off(self):
+        return f"Turning off {self.brand} system unit"
+
+
+system_unit = SystemUnit(
+    "AMD Ryzen 9",
+    "Aluminum",
+    "Black",
+    "₱13,287.53",
+    "3.7 GHz",
+    12,
+    "Zen 3")
+
+
+
+
+
+
+
+
+```
+
+
 
 
 ## How to Run The Program
