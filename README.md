@@ -353,7 +353,7 @@ Additionally, the user may access the device's features and functions without ha
 
 ![image](https://github.com/user-attachments/assets/d59d1916-8399-4054-8408-678560046831)
 
-## 🙏 Acknowledgment
+# 🙏 Acknowledgment
 
 <p align="justify">
   &nbsp; We would like to express our heartfelt gratitude for our teacher <b>Ms. Fatima Marie Agdon</b> sincere
