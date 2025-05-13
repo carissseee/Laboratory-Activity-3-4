@@ -285,14 +285,62 @@ system_unit = SystemUnit(
     12,
     "Zen 3")
 
+```
+
+###  ```WebCam```
+
+```python
 
 
+    class WebCam(ComputerDevice):
+        def __init__(self, brand, material, color, price, resolution, framerate, field_of_view):
+            super().__init__(brand, material, color, price)
+            self.resolution = resolution
+            self.framerate = framerate
+            self.field_of_view = field_of_view
 
 
+        def __str__(self):
+            return (
+                f"Brand: {self.brand}\n"
+                f"Material: {self.material}\n"
+                f"Color: {self.color}\n"
+                f"Price: PHP {self.price}\n"
+                f"Resolution: {self.resolution}\n"
+                f"Framerate: {self.framerate}fps\n"
+                f"Field of View: {self.field_of_view} degrees"
+            )
 
 
+        def capture_image(self):
+            return "Image is being captured..."
+        
+        def start_recording(self):
+            return f"{self.brand} is currently recording..."
+        
+        def stop_recording(self):
+            return f"{self.brand} has stopped recording..."
+        
+        def on(self):
+            return f"Turning on {self.brand}"
+        
+        def off(self):
+            return f"Turning off {self.brand}"
+
+
+    webcam = WebCam(
+        "Logitech BRIO 300",
+        "Plastic and Graphite",
+        "White",
+        "₱3,290.00",
+        1080,
+        30,
+        60)
 
 ```
+
+
+
 
 
 
