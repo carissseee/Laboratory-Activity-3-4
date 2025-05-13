@@ -233,7 +233,7 @@ speaker = Speaker(
     "24 Watts")
 
 ```
-Another subclass from `ComputerDevice`  is `Speaker` which inherits attributes from the parent `CompuerDevice` such as `brand`, `material`, `color`, and `price` by using `super()`mehod. Its own attributes includes `dual`, `frequency`, and `power_output`. All of its attributes are set by using the `def __init__` method while displayed as a string using def `__str__(self)`. The def `on()` and `def off()` method came from the parent class ComputerDevice by using @abstractmethod  which will have a different implementation for this device. The remaining methods such as `play_sound`, `adjust_volume`, and `mute()`  will return strings and statements about the device.
+Another subclass from `ComputerDevice`  is `Speaker` which inherits attributes from the parent `CompuerDevice` such as `brand`, `material`, `color`, and `price` by using `super()`mehod. Its own attributes includes `dual`, `frequency`, and `power_output`. All of its attributes are set by using the `def __init__` method while displayed as a string using def `__str__(self)`. The def `on()` and `def off()` method came from the parent class ComputerDevice by using `@abstractmethod`  which will have a different implementation for this device. The remaining methods such as `play_sound`, `adjust_volume`, and `mute()`  will return strings and statements about the device.
 
 ### ```SystemUnit```
 ```python
