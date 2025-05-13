@@ -18,7 +18,6 @@
 </p>
 
 <br />
-
 ## Code Snippet
 ### ```ComputerDevice```
 ```python
@@ -91,7 +90,6 @@ mouse = Mouse(
 </p>
 
 <br />
-
 ### ```Keyboard```
 ```python
 class Keyboard(ComputerDevice):
@@ -144,7 +142,6 @@ keyboard = Keyboard(
 </p>
 
 <br />
-
 ### ```Monitor```
 ``` python
 
@@ -199,7 +196,6 @@ monitor = Monitor(
 </p>
 
 <br />
-
 ### ```Speaker```
 ```python
 
@@ -254,7 +250,6 @@ speaker = Speaker(
 </p>
 
 <br />
-
 ### ```SystemUnit```
 ```python
 
