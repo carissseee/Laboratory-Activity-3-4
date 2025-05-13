@@ -38,6 +38,13 @@ class ComputerDevice(ABC):
 
 
 ```
+The parent class of this project shall be referred to as ComputerDevice which uses abstraction and inheritance for its subclass. Abstraction was possible by using ```from abc import ABC```, ```@abstractmethod```. Here, ```ComputerDevice``` will use ```ABC``` for its parameter to allow abstraction.
+It willl be given attributes such as brand, material, color, and price by using ```def__init__(self, brand, material, color, price):```
+The usage of self will refer to the instance of an object of class ```ComputerDevice```. With this, the syntax of ```self.brand``` , ```self.material```, ```self.color```, and, ```self.price``` will refer to the attributes of the object which will be equivalent to the parameters brand, material, color and price.
+
+The following functions def on(self) and def off(self) pass shall use the decorator ```@abstractmethod```  , and pass to allow abstraction and inheritance for its subclasses. This also allows overriding for a  different implementation
+
+
 🖱️  ```Mouse```
 
 ```python
