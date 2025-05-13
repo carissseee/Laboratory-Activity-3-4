@@ -13,11 +13,8 @@
 | Jiselle Marasigan | [ellemrsgn27’s](https://github.com/dp) |
 
 ## Short Description of the System
-<p align="justify">
-  &nbsp; This  Python-based console-application simulates a Computer Device Management System by using the principles   of object-oriented programming. In this program the abstract base class is  ``` ComputerDevice``` and its subclasses includes `Mouse`, `Keyboard`, `Monitor`, `Speaker`, `SystemUnit`, and `WebCam` which contains their unique attributes and behaviors. To allow users to interact with the devices, it will display a text-based menu to show its functionalities such as, viewing its specifications, performing operations like turning on/off, typing, adjusting settings and other particular methods. This project demonstrates class inheritance, abstraction, and polymorphism in a structured and practical way.
-</p>
+This  Python-based console-application simulates a Computer Device Management System by using the principles   of object-oriented programming. In this program the abstract base class is  ``` ComputerDevice``` and its subclasses includes `Mouse`, `Keyboard`, `Monitor`, `Speaker`, `SystemUnit`, and `WebCam` which contains their unique attributes and behaviors. To allow users to interact with the devices, it will display a text-based menu to show its functionalities such as, viewing its specifications, performing operations like turning on/off, typing, adjusting settings and other particular methods. This project demonstrates class inheritance, abstraction, and polymorphism in a structured and practical way.
 
-<br />
 ## Code Snippet
 ### ```ComputerDevice```
 ```python
@@ -85,11 +82,8 @@ mouse = Mouse(
     16000,
     "Optical")
 ```
-<p align="justify">
-  &nbsp; The `Mouse` class, a subclass of `ComputerDevice`, models the characteristics and behaviors of a computer mouse while demonstrating object-oriented principles such as inheritance, encapsulation, and method overriding. It inherits general attributes like `brand`, `material`, `color`, and `price` from the parent class, and introduces mouse-specific attributes including `connectivity` (wired or wireless), `dpi` (sensitivity), and `sensor` type (optical or laser). The class includes a __str__() method for generating a user-friendly summary of all attributes. Functional methods simulate mouse interactions: `click()` for clicking, `scroll()` for scrolling, and `move_cursor(direction)` for directional cursor movement. Additionally, the `on()` and `off()` methods simulate powering the device on and off, respectively.
-</p>
+The `Mouse` class, a subclass of `ComputerDevice`, models the characteristics and behaviors of a computer mouse while demonstrating object-oriented principles such as inheritance, encapsulation, and method overriding. It inherits general attributes like `brand`, `material`, `color`, and `price` from the parent class, and introduces mouse-specific attributes including `connectivity` (wired or wireless), `dpi` (sensitivity), and `sensor` type (optical or laser). The class includes a __str__() method for generating a user-friendly summary of all attributes. Functional methods simulate mouse interactions: `click()` for clicking, `scroll()` for scrolling, and `move_cursor(direction)` for directional cursor movement. Additionally, the `on()` and `off()` methods simulate powering the device on and off, respectively.
 
-<br />
 ### ```Keyboard```
 ```python
 class Keyboard(ComputerDevice):
@@ -137,11 +131,8 @@ keyboard = Keyboard(
     104,
     "Mechanical")
 ```
-<p align="justify">
-  &nbsp; The `Keyboard` class is a subclass of the abstract base class `ComputerDevice`. It includes inherited attributes from the base class like `brand`, `material`, `color`, and `price` by using `super()` method. It also has specific properties for a keyboard such as `layout`, `number_of_keys`, and `key_type`. The class methods are `type()`, `press_key()`, and `release_key()` that shows keyboard functionality, as well as power control methods `on()` and `off()` that came from base class by using @abstractmethod. This class is used to simulate a keyboard in a simple computer system.
-</p>
+The `Keyboard` class is a subclass of the abstract base class `ComputerDevice`. It includes inherited attributes from the base class like `brand`, `material`, `color`, and `price` by using `super()` method. It also has specific properties for a keyboard such as `layout`, `number_of_keys`, and `key_type`. The class methods are `type()`, `press_key()`, and `release_key()` that shows keyboard functionality, as well as power control methods `on()` and `off()` that came from base class by using @abstractmethod. This class is used to simulate a keyboard in a simple computer system.
 
-<br />
 ### ```Monitor```
 ``` python
 
@@ -191,11 +182,8 @@ monitor = Monitor(
     144)
 
 ```
-<p align="justify">
-  &nbsp; The `Monitor` class is a subclass of the abstract base class `ComputerDevice`. It includes inherited attributes from the base class like `brand`, `material`, `color`, and `price` using `super()` method. It also introduces specific properties for a monitor such as `size`, `resolution`, and `refresh_rate`. Its methods show monitor functionalities such as `display()` for displaying content, `adjust_brightness()`, and `set_resolution()`, along with the power control methods `on()` and `off()` that came from the base class by using `@abstractmethod`. This class is used to simulate a monitor in a simple computer system.
-</p>
+The `Monitor` class is a subclass of the abstract base class `ComputerDevice`. It includes inherited attributes from the base class like `brand`, `material`, `color`, and `price` using `super()` method. It also introduces specific properties for a monitor such as `size`, `resolution`, and `refresh_rate`. Its methods show monitor functionalities such as `display()` for displaying content, `adjust_brightness()`, and `set_resolution()`, along with the power control methods `on()` and `off()` that came from the base class by using `@abstractmethod`. This class is used to simulate a monitor in a simple computer system.
 
-<br />
 ### ```Speaker```
 ```python
 
@@ -245,11 +233,8 @@ speaker = Speaker(
     "24 Watts")
 
 ```
-<p align="justify">
-  &nbsp; Another subclass from ComputerDevice  is Speaker which inherits attributes from the parent CompuerDevice such as brand, material, color, and price by using super() mehod.  Its own attributes includes dual, frequency, and power_output. All of its attributes are set by using the def __init__ method while displayed as a string using def __str__(self). The def on() and def off() method came from the parent class ComputerDevice by using @abstractmethod  which will have a different implementation for this device. The remaining methods such as play_sound, adjust_volume, and mute()  will return strings and statements about the device.
-</p>
+Another subclass from `ComputerDevice`  is `Speaker` which inherits attributes from the parent `CompuerDevice` such as `brand`, `material`, `color`, and `price` by using `super()`mehod. Its own attributes includes `dual`, `frequency`, and `power_output`. All of its attributes are set by using the `def __init__` method while displayed as a string using def `__str__(self)`. The def `on()` and `def off()` method came from the parent class ComputerDevice by using @abstractmethod  which will have a different implementation for this device. The remaining methods such as `play_sound`, `adjust_volume`, and `mute()`  will return strings and statements about the device.
 
-<br />
 ### ```SystemUnit```
 ```python
 
