@@ -134,6 +134,64 @@ keyboard = Keyboard(
 
 
 
+
+
+
+``` python
+
+class Monitor(ComputerDevice):
+    def __init__(self, brand, material, color, price, size, resolution, refresh_rate):
+        super().__init__(brand, material, color, price)
+        self.size = size
+        self.resolution = resolution
+        self.refresh_rate = refresh_rate
+
+
+    def __str__(self):
+        return (
+            f"Brand: {self.brand}\n"
+            f"Material: {self.material}\n"
+            f"Color: {self.color}\n"
+            f"Price: PHP {self.price}\n"
+            f"Size: {self.size}\n"
+            f"Resolution: {self.resolution}\n"
+            f"Refresh Rate: {self.refresh_rate} Hz"
+        )
+
+
+    def display(self):
+        return f"Displaying content on {self.brand} monitor."
+       
+    def adjust_brightness(self, level):
+        return f"Adjusting brightness to {level}%."
+       
+    def set_resolution(self, resolution):
+        return f"Changing resolution to {resolution}."
+       
+    def on(self):
+        return f"{self.brand} monitor is powering on."
+       
+    def off(self):
+        return f"{self.brand} monitor is shutting down."
+
+
+monitor = Monitor(
+    "Dell",
+    "Plastic",
+    "Black",
+    5000,
+    27,
+    "1920x1080",
+    144)
+
+
+
+
+
+
+
+```
+
 ## How to Run The Program
 This software is a computer device simulator that uses object-oriented programming (OOP) to illustrate different computer hardware components and how they work. The user can select from six different computer devices on the main menu that appears when the software has finished running: the mouse, keyboard, monitor, speaker, system unit, and camera. If the user wants to stop, they can also choose to terminate the program. The application will instantly show all of the device's details after you select one from the menu. The brand, material, color, price, and other technical characteristics particular to the item are all included in these specifications. The application will also show all of the functioning methods related to that specific device in accordance with the standards. These techniques reflect common tasks that the device can carry out, like clicking, scrolling, taking pictures, recording audio, typing, altering the brightness, or processing data. The output will provide users a sense of how each piece of hardware works by simulating these functionalities in a descriptive way.
 
