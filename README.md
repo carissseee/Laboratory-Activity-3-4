@@ -151,5 +151,5 @@ Additionally, the user may access the device's features and functions without ha
 <br />
 
 *Sincerely,* <br />
-**Team 9**
+**Team 7**
 
