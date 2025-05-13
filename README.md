@@ -1,6 +1,6 @@
 # OOPerate This:  A Computer Device Simulator
 
-## Laboratory-Activity-3 & 4
+## Laboratory Activity 3 & 4
 
 ![COMPUTER DEVICE](https://github.com/user-attachments/assets/b0dc0920-c011-4e92-bdc5-477ed2291a9f)
 
