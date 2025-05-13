@@ -136,3 +136,18 @@ This software is a computer device simulator that uses object-oriented programmi
 
 Additionally, the user may access the device's features and functions without having to navigate through further menus after choosing one. For simplicity, all data and technique outputs are displayed at once. When finished, the application will return to the main menu, enabling the user to either exit the program or choose another device. This simulation's main goal is to assist users with comprehending Python's class inheritance, abstraction, and polymorphism while also offering a simple and engaging method of visualizing how various computer devices function. It acts as a hands-on practice for creating menu-driven apps and using object-oriented concepts with actual objects.
 
+## 🙏 Acknowledgment
+
+<p align="justify">
+  &nbsp; We would like to express our heartfelt gratitude for our teacher <b>Ms. Fatima Marie Agdon</b> sincere
+  support and encouragement for this project. Your dedication to teach us and your thoughtful guidance helped
+  us to think critically and improve at every stage. We are truly grateful for the time and effort you devoted
+  to helping us grow. We are incredibly grateful for all the time and effort you've given us. This project
+  would not have been possible without your unwavering support.
+</p>
+
+<br />
+
+*Sincerely,* <br />
+**Team 9**
+
