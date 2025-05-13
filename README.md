@@ -131,7 +131,7 @@ keyboard = Keyboard(
     104,
     "Mechanical")
 ```
-The Keyboard class is a subclass of the abstract base class ComputerDevice. It includes inherited attributes from the base class like brand, material, color, and price by using super() method. It also has specific properties for a keyboard such as layout, number_of_keys, and key_type. The class methods are type(), press_key(), and release_key() that shows keyboard functionality, as well as power control methods on() and off() that came from base class by using @abstractmethod. This class is used to simulate a keyboard in a simple computer system.
+The `Keyboard` class is a subclass of the abstract base class `ComputerDevice`. It includes inherited attributes from the base class like `brand`, `material`, `color`, and `price` by using `super()` method. It also has specific properties for a keyboard such as `layout`, `number_of_keys`, and `key_type`. The class methods are `type()`, `press_key()`, and `release_key()` that shows keyboard functionality, as well as power control methods `on()` and `off()` that came from base class by using @abstractmethod. This class is used to simulate a keyboard in a simple computer system.
 
 
 ### ```Monitor```
