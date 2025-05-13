@@ -343,6 +343,10 @@ while ```def __str__``` method for its display. The ```def on()``` and ```def of
 
 ```
 
+WebCam is another subclass which inherits its attributes by containing ComputerDevice  in its parameters. It uses the ```super()```  method to inherit the attributes from the parent class ComputerDevice within the ```def __init__``` method. Besides this, the WebCam subclass has its own attributes such as resolution, framerate, and field of view which is also included in its parameters.
+
+To display its attributes, it will use ```def __str__(self)``` while for its other methods such as ```capture_image```, ```start_recording```, ```stop_recording```, it will use an f string and reference to its attribute such ```self.brand``` to specify the object of ```WebCam```. As mentioned previously, the ```def on()``` and ```def off()``` method will contain a different implementation for the ```WebCam``` as a result of its abstraction in ComputerDevice
+
 
 
 
