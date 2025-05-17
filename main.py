@@ -261,7 +261,7 @@ def mouse_menu(sample_mouse):
         elif choice == "4":
             print(mouse.scroll())
         elif choice == "5":
-            print(mouse.move_cursor())
+            print(mouse.move_cursor("left"))
         elif choice == "6":
             print(mouse.off())
         elif choice == "0":
